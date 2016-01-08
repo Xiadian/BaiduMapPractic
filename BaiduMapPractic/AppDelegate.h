@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    BMKMapManager *_mapManager;
+}
 @property (strong, nonatomic) UIWindow *window;
 
 

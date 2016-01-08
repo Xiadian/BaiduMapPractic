@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24F6859F614C706257D84065 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A79046B4044E4C88273942B /* libPods.a */; };
 		54A0F07D1C3DF826006A0479 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F07C1C3DF826006A0479 /* main.m */; };
 		54A0F0801C3DF826006A0479 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F07F1C3DF826006A0479 /* AppDelegate.m */; };
 		54A0F0831C3DF826006A0479 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F0821C3DF826006A0479 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A79046B4044E4C88273942B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A0F0781C3DF826006A0479 /* BaiduMapPractic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMapPractic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A0F07C1C3DF826006A0479 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54A0F07E1C3DF826006A0479 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		54A0F09C1C3DF827006A0479 /* BaiduMapPracticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduMapPracticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A0F0A01C3DF827006A0479 /* BaiduMapPracticUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapPracticUITests.m; sourceTree = "<group>"; };
 		54A0F0A21C3DF827006A0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5676BC67F4036F934323AE94 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E3F25C1EBC763C8F2F5B9106 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F6859F614C706257D84065 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5465E57A0199638BAA736C8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A79046B4044E4C88273942B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54A0F06F1C3DF826006A0479 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				54A0F0941C3DF827006A0479 /* BaiduMapPracticTests */,
 				54A0F09F1C3DF827006A0479 /* BaiduMapPracticUITests */,
 				54A0F0791C3DF826006A0479 /* Products */,
+				AA525E0BAAA3F185E75EF5C8 /* Pods */,
+				5465E57A0199638BAA736C8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = BaiduMapPracticUITests;
 			sourceTree = "<group>";
 		};
+		AA525E0BAAA3F185E75EF5C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3F25C1EBC763C8F2F5B9106 /* Pods.debug.xcconfig */,
+				5676BC67F4036F934323AE94 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54A0F0A51C3DF827006A0479 /* Build configuration list for PBXNativeTarget "BaiduMapPractic" */;
 			buildPhases = (
+				DC1CA79955CB922466AABE38 /* Check Pods Manifest.lock */,
 				54A0F0741C3DF826006A0479 /* Sources */,
 				54A0F0751C3DF826006A0479 /* Frameworks */,
 				54A0F0761C3DF826006A0479 /* Resources */,
+				FB39E6443DE2634B5FB82E6D /* Embed Pods Frameworks */,
+				48A3DB0A310F1948E5A12C9C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +234,7 @@
 				TargetAttributes = {
 					54A0F0771C3DF826006A0479 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4575NUE242;
 					};
 					54A0F0901C3DF827006A0479 = {
 						CreatedOnToolsVersion = 7.2;
@@ -264,6 +292,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48A3DB0A310F1948E5A12C9C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1CA79955CB922466AABE38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB39E6443DE2634B5FB82E6D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54A0F0741C3DF826006A0479 /* Sources */ = {
@@ -409,9 +485,12 @@
 		};
 		54A0F0A61C3DF827006A0479 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F25C1EBC763C8F2F5B9106 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BaiduMapPractic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xue.BaiduMapPractic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +499,12 @@
 		};
 		54A0F0A71C3DF827006A0479 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5676BC67F4036F934323AE94 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BaiduMapPractic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xue.BaiduMapPractic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +578,7 @@
 				54A0F0A71C3DF827006A0479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54A0F0A81C3DF827006A0479 /* Build configuration list for PBXNativeTarget "BaiduMapPracticTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +587,7 @@
 				54A0F0AA1C3DF827006A0479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54A0F0AB1C3DF827006A0479 /* Build configuration list for PBXNativeTarget "BaiduMapPracticUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +596,7 @@
 				54A0F0AD1C3DF827006A0479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

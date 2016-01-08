@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqI-yX-j9g">
+                                <rect key="frame" x="225" y="36" width="56" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="LRd-J7-2J8"/>
+                                    <constraint firstAttribute="height" constant="30" id="NF5-P0-QfM"/>
+                                </constraints>
+                                <state key="normal" title="卫星图">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="butt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtC-DG-CQt"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="jw7-DU-hGa">
+                                <rect key="frame" x="-4" y="28" width="227" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pRA-hS-TL9"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVo-ai-4Eh">
+                                <rect key="frame" x="211" y="518" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="iei-0M-qFx"/>
+                                    <constraint firstAttribute="height" constant="30" id="yxl-6F-lId"/>
+                                    <constraint firstAttribute="width" constant="80" id="zIO-aY-wqm"/>
+                                </constraints>
+                                <state key="normal" title="我的位置">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zIO-aY-wqm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="myLoctiaon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L59-fP-heg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dVo-ai-4Eh" secondAttribute="trailing" constant="13" id="0yp-tA-gVa"/>
+                            <constraint firstItem="jw7-DU-hGa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1Ue-Ul-UcB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dVo-ai-4Eh" secondAttribute="bottom" constant="20" id="S0q-vN-Cch"/>
+                            <constraint firstItem="FqI-yX-j9g" firstAttribute="leading" secondItem="jw7-DU-hGa" secondAttribute="trailing" constant="2" id="Ywo-He-Caf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FqI-yX-j9g" secondAttribute="trailing" constant="23" id="b6a-lD-lPU"/>
+                            <constraint firstItem="jw7-DU-hGa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="v0t-yX-HkO"/>
+                            <constraint firstItem="FqI-yX-j9g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="y2M-x6-xQW"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="searchBar" destination="jw7-DU-hGa" id="BPs-Rj-Wp2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="258" y="335"/>
         </scene>
     </scenes>
 </document>
